@@ -1,0 +1,18 @@
+Levenberg-Marquardt on data (attribution.csv): configurations 48, runs per configuration [100]
+  flat E=8: serial 98/100, ancilla 100/100, parallel2 100/100
+  flat E=12: serial 100/100, ancilla 100/100, parallel2 100/100
+  flat E=16: serial 96/100, ancilla 100/100, parallel2 100/100
+  flat E=24: serial 94/100, ancilla 100/100, parallel2 100/100
+  flat E=32: serial 82/100, ancilla 100/100, parallel2 100/100
+  Poisson kernel E=8: serial 99/100, ancilla 100/100, parallel2 100/100
+  Poisson kernel E=12: serial 97/100, ancilla 100/100, parallel2 100/100
+  Poisson kernel E=16: serial 94/100, ancilla 100/100, parallel2 100/100
+  Poisson kernel E=24: serial 79/100, ancilla 100/100, parallel2 100/100
+  Poisson kernel E=32: serial 72/100, ancilla 100/100, parallel2 100/100
+  gasprice E=24: serial 58/100, ancilla 100/100, parallel2 100/100
+  gasprice E=32: serial 70/100, ancilla 100/100, parallel2 100/100
+  ibmclose E=24: serial 93/100, ancilla 100/100, parallel2 100/100
+  ibmclose E=32: serial 67/100, ancilla 100/100, parallel2 100/100
+  nottem E=24: serial 32/100, ancilla 100/100, parallel2 100/100
+  nottem E=32: serial 59/100, ancilla 100/100, parallel2 100/100
+serial runs with both optimisers: 1600; Adam at the optimum in 516, LM in 488 of these and in 802 of the other 1084

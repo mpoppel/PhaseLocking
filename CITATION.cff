@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+message: "If you use this code or these results, please cite the paper."
+title: "Same Spectrum, Harder First-Order Training: Phase-Locking in Single- versus Multi-Qubit Re-Uploading Circuits"
+repository-code: "https://github.com/mpoppel/PhaseLocking"
+license: MIT
+authors:
+  - family-names: Poppel
+    given-names: Michael
+  - family-names: Bucher
+    given-names: David
+  - family-names: Zorn
+    given-names: Maximilian
+  - family-names: Baumann
+    given-names: Markus
+  - family-names: Wölckert
+    given-names: Sebastian
+  - family-names: Linnhoff-Popien
+    given-names: Claudia
+  - family-names: Altmann
+    given-names: Philipp
+  - family-names: Stein
+    given-names: Jonas
+preferred-citation:
+  type: article
+  title: "Same Spectrum, Harder First-Order Training: Phase-Locking in Single- versus Multi-Qubit Re-Uploading Circuits"
+  journal: "arXiv preprint arXiv:XXXX.XXXXX"
+  year: 2026
+  authors:
+    - family-names: Poppel
+      given-names: Michael
+    - family-names: Bucher
+      given-names: David
+    - family-names: Zorn
+      given-names: Maximilian
+    - family-names: Baumann
+      given-names: Markus
+    - family-names: Wölckert
+      given-names: Sebastian
+    - family-names: Linnhoff-Popien
+      given-names: Claudia
+    - family-names: Altmann
+      given-names: Philipp
+    - family-names: Stein
+      given-names: Jonas

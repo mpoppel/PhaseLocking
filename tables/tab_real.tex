@@ -1,0 +1,12 @@
+\begin{tabular}{lcccccccc}\toprule
+ & & \multicolumn{3}{c}{runs at the optimum} & \multicolumn{2}{c}{median test $R^2$} & held-out error & serial runs \\
+\cmidrule(lr){3-5}\cmidrule(lr){6-7}
+series & $E$ & serial & ancilla & par.\,2 & serial & ancilla & serial/ancilla [10\%, 90\%] & worse \\\midrule
+\texttt{gasprice} & 24 & 0.04 & 1.00 & 1.00 & 0.9569 & 0.9591 & 1.05 [1.00, 1.15] & 0.92 \\
+\texttt{gasprice} & 32 & 0.00 & 0.98 & 0.96 & 0.9682 & 0.9786 & 1.49 [1.30, 1.83] & 1.00 \\
+\texttt{ibmclose} & 24 & 0.01 & 1.00 & 1.00 & 0.9607 & 0.9641 & 1.09 [1.04, 1.14] & 0.97 \\
+\texttt{ibmclose} & 32 & 0.00 & 1.00 & 1.00 & 0.9629 & 0.9638 & 1.03 [0.97, 1.09] & 0.70 \\
+\texttt{nottem} & 24 & 0.09 & 1.00 & 1.00 & 0.8995 & 0.9004 & 1.01 [0.97, 1.02] & 0.71 \\
+\texttt{nottem} & 32 & 0.00 & 1.00 & 1.00 & 0.8879 & 0.8873 & 0.99 [0.96, 1.03] & 0.39 \\
+\bottomrule
+\end{tabular}

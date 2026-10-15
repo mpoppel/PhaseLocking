@@ -1,0 +1,53 @@
+threshold EPS = 1e-06
+serial runs: GD converges in 378, LM in 377 of these and in 546 of the other 622
+serial runs: Adam (tuned) converges in 673, LM in 648 of these and in 275 of the other 327
+serial runs: GD converges in 378, Adam (tuned) in 361 of these and in 312 of the other 622
+configurations (of 10) in which the difference ancilla - serial is significant, per threshold; in brackets those in which serial - ancilla is:
+  GD 0.0001: 9 [0]; not significant: 1/k E=32
+  GD 1e-06: 9 [0]; not significant: 1/k E=32
+  GD 1e-08: 9 [0]; not significant: 1/k E=32
+  GD 1e-10: 9 [0]; not significant: 1/k E=32
+  LM 0.0001: 4 [0]; not significant: flat E=8, flat E=12, flat E=16, 1/k E=8, 1/k E=12, 1/k E=16
+  LM 1e-06: 4 [0]; not significant: flat E=8, flat E=12, flat E=16, 1/k E=8, 1/k E=12, 1/k E=16
+  LM 1e-08: 4 [0]; not significant: flat E=8, flat E=12, flat E=16, 1/k E=8, 1/k E=12, 1/k E=16
+  LM 1e-10: 4 [0]; not significant: flat E=8, flat E=12, flat E=16, 1/k E=8, 1/k E=12, 1/k E=16
+  Adam 0.0001: 9 [0]; not significant: flat E=8
+  Adam 1e-06: 9 [0]; not significant: flat E=8
+  Adam 1e-08: 9 [0]; not significant: flat E=8
+  Adam 1e-10: 2 [7]; not significant: 1/k E=16
+two-qubit runs under LM: 2000 of 2000 converge
+median log10 kappa_J at initialisation:
+E                  8    12    16    24    32
+family arm                                  
+decay  ancilla   -2.7 -4.3  -5.7  -8.6 -11.5
+       parallel2 -3.1 -4.8  -6.3  -9.5 -12.8
+       serial    -4.7 -7.9 -10.8 -16.2 -17.0
+flat   ancilla   -2.8 -4.2  -5.7  -8.7 -11.6
+       parallel2 -2.9 -4.7  -6.2  -9.4 -12.9
+       serial    -4.5 -7.1 -11.6 -16.2 -17.0
+configurations of different architectures with median initial log10 kappa_J within 0.5 (share converged under GD, ancilla/parallel minus serial, Newcombe 95%):
+  decay: ancilla E=8 (-2.7; 100/100) | parallel2 E=8 (-3.1; 100/100) | +0.00 [-0.04, +0.04]
+  decay: serial E=8 (-4.7; 71/100) | ancilla E=12 (-4.3; 99/100) | +0.28 [+0.19, +0.38]
+  decay: serial E=8 (-4.7; 71/100) | parallel2 E=12 (-4.8; 100/100) | +0.29 [+0.20, +0.39]
+  flat: ancilla E=8 (-2.8; 100/100) | parallel2 E=8 (-2.9; 100/100) | +0.00 [-0.04, +0.04]
+  flat: serial E=8 (-4.5; 93/100) | ancilla E=12 (-4.2; 100/100) | +0.07 [+0.02, +0.14]
+  flat: serial E=8 (-4.5; 93/100) | parallel2 E=12 (-4.7; 100/100) | +0.07 [+0.02, +0.14]
+  flat: serial E=16 (-11.6; 65/100) | ancilla E=32 (-11.6; 99/100) | +0.34 [+0.24, +0.44]
+AUC of initial kappa_J for convergence under GD, configurations with >= 5 runs of each kind [bootstrap 95%, 1000 resamples]:
+  decay E=8 serial: 0.59 [0.47, 0.70] (71 converged, 29 not)
+  decay E=12 serial: 0.61 [0.49, 0.72] (32 converged, 68 not)
+  decay E=16 ancilla: 0.63 [0.49, 0.78] (77 converged, 23 not)
+  decay E=16 parallel2: 0.56 [0.44, 0.67] (72 converged, 28 not)
+  decay E=16 serial: 0.40 [0.11, 0.71] (5 converged, 95 not)
+  decay E=24 ancilla: 0.52 [0.36, 0.67] (16 converged, 84 not)
+  decay E=24 parallel2: 0.57 [0.40, 0.73] (15 converged, 85 not)
+  flat E=8 serial: 0.65 [0.47, 0.82] (93 converged, 7 not)
+  flat E=12 serial: 0.59 [0.44, 0.72] (85 converged, 15 not)
+  flat E=16 serial: 0.55 [0.43, 0.68] (65 converged, 35 not)
+  flat E=24 serial: 0.56 [0.43, 0.69] (24 converged, 76 not)
+log10 kappa_J at the last checkpoint of the 1951 converged GD runs: -2.3 to -0.6
+kappa_J never above 1e-4 at a checkpoint: serial 465, ancilla 127, parallel2 143; of these 1 reach loss 1e-4
+LM, 77 failed serial runs: 56 with singular values <= 1e-8 sigma_1 (median log10 relative gradient -6.8); 21 without (log10 sigma_min/sigma_1 -8.0 to -2.7); 623 converged end points in the same configurations, smallest log10 sigma_min/sigma_1 -3.6
+Adam, ancilla, final log10 loss of the 997 converged runs (tuned rates [np.float64(0.001)]): median -9.6, 5% -11.8, 95% -8.2
+  under the bracketed rates: rate 0.0001: median -11.8 (896 runs); rate 0.0003: median -10.7 (100 runs)
+Adam tuning: 25 of 30 configurations at the smallest grid rate; 27 extended, 23 selections changed, 21 still at an end of the grid

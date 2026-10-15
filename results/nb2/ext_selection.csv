@@ -1,0 +1,49 @@
+arm,family,E,lr_tuned,lr_bracketed,extended,plateau_lo,plateau_hi,saturated,still_at_edge,rerun
+serial,flat,8,0.03,0.03,,0.01,0.1,True,True,False
+ancilla,flat,8,0.01,0.01,,0.001,0.1,True,True,False
+parallel2,flat,8,0.01,0.01,,0.001,0.1,True,True,False
+serial,flat,12,0.01,0.01,,0.001,0.1,True,True,False
+ancilla,flat,12,0.01,0.01,,0.001,0.1,True,True,False
+parallel2,flat,12,0.01,0.01,,0.001,0.1,True,True,False
+serial,flat,16,0.01,0.01,,0.001,0.1,True,True,False
+ancilla,flat,16,0.01,0.01,,0.001,0.1,True,True,False
+parallel2,flat,16,0.01,0.01,,0.001,0.1,True,True,False
+serial,flat,24,0.03,0.03,,0.03,0.03,True,False,False
+ancilla,flat,24,0.01,0.01,,0.001,0.1,True,True,False
+parallel2,flat,24,0.01,0.01,,0.001,0.1,True,True,False
+serial,flat,32,0.03,0.03,,0.003,0.03,False,False,False
+ancilla,flat,32,0.01,0.01,,0.001,0.1,True,True,False
+parallel2,flat,32,0.01,0.01,,0.001,0.1,True,True,False
+serial,bump,8,0.003,0.003,,0.003,0.003,True,False,False
+ancilla,bump,8,0.01,0.01,,0.001,0.1,True,True,False
+parallel2,bump,8,0.01,0.01,,0.001,0.1,True,True,False
+serial,bump,12,0.003,0.003,,0.003,0.003,False,False,False
+ancilla,bump,12,0.01,0.01,,0.001,0.1,True,True,False
+parallel2,bump,12,0.01,0.01,,0.001,0.1,True,True,False
+serial,bump,16,0.003,0.003,,0.003,0.003,False,False,False
+ancilla,bump,16,0.003,0.003,,0.001,0.01,True,True,False
+parallel2,bump,16,0.003,0.003,,0.001,0.03,True,True,False
+serial,bump,24,0.01,0.01,,0.003,0.03,False,False,False
+ancilla,bump,24,0.01,0.01,,0.01,0.01,False,False,False
+parallel2,bump,24,0.001,0.001,0.0003 0.0001,0.001,0.01,False,False,False
+serial,bump,32,0.003,0.001,0.0003 0.0001,0.0003,0.01,False,False,True
+ancilla,bump,32,0.003,0.003,,0.003,0.003,False,False,False
+parallel2,bump,32,0.003,0.003,0.0003 0.0001,0.001,0.01,False,False,False
+serial,nottem,24,0.01,0.01,,0.003,0.03,False,False,False
+ancilla,nottem,24,0.01,0.01,0.0003 0.0001 0.3,0.0003,0.3,False,True,False
+parallel2,nottem,24,0.01,0.01,,0.001,0.1,True,True,False
+serial,nottem,32,0.003,0.001,0.0003 0.0001,0.0001,0.03,False,True,True
+ancilla,nottem,32,0.01,0.003,0.0003 0.0001 0.3,0.0003,0.1,False,False,True
+parallel2,nottem,32,0.01,0.01,,0.001,0.1,True,True,False
+serial,gasprice,24,0.003,0.01,0.0001 3e-05 0.3,0.0003,0.3,False,True,True
+ancilla,gasprice,24,0.003,0.003,,0.0003,0.03,True,True,False
+parallel2,gasprice,24,0.003,0.003,,0.0003,0.03,True,True,False
+serial,gasprice,32,0.003,0.003,,0.003,0.01,False,False,False
+ancilla,gasprice,32,0.003,0.003,,0.003,0.01,True,False,False
+parallel2,gasprice,32,0.003,0.003,,0.003,0.003,False,False,False
+serial,ibmclose,24,0.001,0.001,0.0001 3e-05,0.0003,0.01,False,False,False
+ancilla,ibmclose,24,0.003,0.003,,0.0003,0.03,True,True,False
+parallel2,ibmclose,24,0.003,0.003,,0.0003,0.03,True,True,False
+serial,ibmclose,32,0.001,0.001,0.0001 3e-05,0.0001,0.01,False,False,False
+ancilla,ibmclose,32,0.003,0.003,,0.001,0.03,True,False,False
+parallel2,ibmclose,32,0.001,0.001,,0.0003,0.01,True,True,False

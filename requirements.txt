@@ -1,0 +1,8 @@
+# Versions used for the paper: replace the unpinned lines with the output of `pip freeze` in the environment of the runs.
+jax==0.6.2
+jaxlib==0.6.2
+numpy
+scipy
+pandas
+matplotlib
+jupyter

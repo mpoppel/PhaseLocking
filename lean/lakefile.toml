@@ -1,0 +1,11 @@
+name = "PhaseLocking"
+defaultTargets = ["PhaseLocking"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "v4.28.0"
+
+[[lean_lib]]
+name = "PhaseLocking"
+globs = ["PhaseLocking"]

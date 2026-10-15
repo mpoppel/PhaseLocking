@@ -1,0 +1,17 @@
+\begin{tabular}{llccccccc}\toprule
+ & & \multicolumn{3}{c}{runs at the optimum} & ancilla$-$serial & \multicolumn{2}{c}{median test $R^2$} & held-out error \\
+\cmidrule(lr){3-5}\cmidrule(lr){7-8}
+target & $E$ & serial & ancilla & par.\,2 & difference [95\%] & serial & ancilla & serial/ancilla \\\midrule
+flat & 8 & 0.95 & 1.00 & 1.00 & +0.05 [+0.00, +0.11] & 1.0000 & 1.0000 & \textemdash \\
+flat & 12 & 0.87 & 1.00 & 1.00 & +0.13 [+0.07, +0.21] & 1.0000 & 1.0000 & \textemdash \\
+flat & 16 & 0.84 & 1.00 & 1.00 & +0.16 [+0.09, +0.24] & 1.0000 & 1.0000 & \textemdash \\
+flat & 24 & 0.60 & 1.00 & 1.00 & +0.40 [+0.30, +0.50] & 1.0000 & 1.0000 & \textemdash \\
+flat & 32 & 0.36 & 1.00 & 1.00 & +0.64 [+0.54, +0.73] & 0.9783 & 1.0000 & \textemdash \\
+\midrule
+Poisson kernel & 8 & 0.77 & 1.00 & 1.00 & +0.23 [+0.15, +0.32] & 0.9969 & 0.9971 & 1.00 [1.00, 1.19] \\
+Poisson kernel & 12 & 0.42 & 0.99 & 0.99 & +0.57 [+0.46, +0.66] & 0.9961 & 0.9968 & 1.01 [1.00, 1.91] \\
+Poisson kernel & 16 & 0.17 & 0.97 & 0.93 & +0.80 [+0.70, +0.86] & 0.9952 & 0.9967 & 1.29 [1.00, 2.33] \\
+Poisson kernel & 24 & 0.03 & 0.62 & 0.37 & +0.59 [+0.48, +0.68] & 0.9918 & 0.9954 & 1.57 [1.02, 3.70] \\
+Poisson kernel & 32 & 0.01 & 0.24 & 0.20 & +0.23 [+0.14, +0.32] & 0.9864 & 0.9926 & 1.61 [1.01, 3.48] \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,31 @@
+arm,family,E,lr_tuned,lr_bracketed,extended,plateau_lo,plateau_hi,still_at_edge,rerun
+serial,flat,8,0.003,0.003,,0.003,0.003,False,False
+ancilla,flat,8,0.001,0.0001,0.0003 0.0001,0.0001,0.0001,True,True
+parallel2,flat,8,0.001,0.0001,0.0003 0.0001,0.0001,0.0003,True,True
+serial,decay,8,0.001,0.001,0.0003 0.0001,0.001,0.001,False,False
+ancilla,decay,8,0.001,0.0001,0.0003 0.0001,0.0001,0.0001,True,True
+parallel2,decay,8,0.001,0.0001,0.0003 0.0001,0.0001,0.0001,True,True
+serial,flat,12,0.001,0.0001,0.0003 0.0001,0.0001,0.0001,True,True
+ancilla,flat,12,0.001,0.0001,0.0003 0.0001,0.0001,0.0001,True,True
+parallel2,flat,12,0.001,0.0001,0.0003 0.0001,0.0001,0.0001,True,True
+serial,decay,12,0.001,0.0003,0.0003 0.0001,0.0003,0.0003,False,True
+ancilla,decay,12,0.001,0.0001,0.0003 0.0001,0.0001,0.0003,True,True
+parallel2,decay,12,0.001,0.0001,0.0003 0.0001,0.0001,0.0001,True,True
+serial,flat,16,0.001,0.0003,0.0003 0.0001,0.0003,0.0003,False,True
+ancilla,flat,16,0.001,0.0003,0.0003 0.0001,0.0003,0.0003,False,True
+parallel2,flat,16,0.001,0.0001,0.0003 0.0001,0.0001,0.0001,True,True
+serial,decay,16,0.001,0.001,0.0003 0.0001,0.001,0.001,False,False
+ancilla,decay,16,0.001,0.0001,0.0003 0.0001,0.0001,0.0001,True,True
+parallel2,decay,16,0.001,0.0001,0.0003 0.0001,0.0001,0.0001,True,True
+serial,flat,24,0.001,0.0003,0.0003 0.0001,0.0003,0.0003,False,True
+ancilla,flat,24,0.001,0.0001,0.0003 0.0001,0.0001,0.0001,True,True
+parallel2,flat,24,0.001,0.0001,0.0003 0.0001,0.0001,0.0001,True,True
+serial,decay,24,0.01,0.01,0.0003 0.0001 0.3,0.001,0.3,True,False
+ancilla,decay,24,0.001,0.0001,0.0003 0.0001,0.0001,0.0001,True,True
+parallel2,decay,24,0.003,0.003,,0.003,0.003,False,False
+serial,flat,32,0.003,0.003,,0.003,0.003,False,False
+ancilla,flat,32,0.001,0.0001,0.0003 0.0001,0.0001,0.0001,True,True
+parallel2,flat,32,0.001,0.0001,0.0003 0.0001,0.0001,0.0001,True,True
+serial,decay,32,0.01,0.01,0.0003 0.0001 0.3,0.0003,0.3,True,False
+ancilla,decay,32,0.001,0.0001,0.0003 0.0001,0.0001,0.0001,True,True
+parallel2,decay,32,0.001,0.0001,0.0003 0.0001,0.0001,0.0001,True,True
