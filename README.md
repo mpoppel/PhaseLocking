@@ -22,13 +22,13 @@ scripts that turn the result files into figures and tables, and the Lean 4 proje
 | `phaselock_core.py` | library: circuits, targets, optimisers (gradient descent with Armijo line search, Levenberg–Marquardt, Adam), statistics | Sec. 5, 6; App. A |
 | `nb1_geometry.ipynb` | experiments on the exact loss: the three optimisers, conditioning along gradient descent, end points of Levenberg–Marquardt; writes `results/nb1/` | Sec. 5 |
 | `nb2_practice.ipynb` | experiments on data: learning-rate tuning, evaluation, Levenberg–Marquardt on the same runs, checks of learning rate and step budget; writes `results/nb2/` | Sec. 6 |
-| `screen_realdata.py` | the screen of real-world series, fixed before any circuit was run on a new series; writes `screening_results.csv` | App. A |
+| `scripts/screen_realdata.py` | the screen of real-world series, fixed before any circuit was run on a new series; writes `data/screening_results.csv` | App. A |
 | `figures.ipynb` | all figures, from the result files alone; writes `figures/` | |
 | `scripts/tables_exact.py` | tables of Section 5 and Appendix D, from `results/nb1/`; writes `tables/` | |
 | `scripts/tables_data.py` | tables of Section 6 and Appendices A and D, from `results/nb2/`; writes `tables/` | |
 | `results/` | the result files (CSV) of the runs reported in the paper | |
 | `figures/`, `tables/` | the figures and tables as they appear in the paper | |
-| `nottem.csv`, `gasprice.csv`, `ibmclose_ts.csv` | the three real-world series (see *Data* below) | Sec. 6 |
+| `data/` | the three real-world series (`nottem.csv`, `gasprice.csv`, `ibmclose_ts.csv`) and the result of the screen (`screening_results.csv`); see *Data* below | Sec. 6, App. A |
 | `lean/` | Lean 4 / Mathlib formalisation of the lemmas, propositions, remarks and corollaries of Sections 3 and 4 and Appendix B; see `lean/README.md` | App. C |
 
 ## Installation
@@ -84,7 +84,7 @@ The real-world series are taken from Rdatasets (Arel-Bundock), which redistribut
 - `gasprice`: weekly US gasoline prices, 1990–2003 (R package `quantreg`);
 - `ibmclose`: daily IBM closing prices (Box & Jenkins 1970, Series B; R package `timeSeriesDataSets`).
 
-`nb2_practice.ipynb` uses the local CSV files if present and otherwise downloads them from Rdatasets. The series remain under
+`nb2_practice.ipynb` reads them from `data/` and downloads them from Rdatasets only if a file is missing. The series remain under
 the terms of their original sources.
 
 ## Citation
